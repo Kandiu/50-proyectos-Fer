@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(20deg, #c60101, #2a0000);
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.search {
+  position: relative;
+  height: 50px;
+}
+
+.search .input {
+  background-color: #000000;
+  border: 0;
+  font-size: 18px;
+  padding: 15px;
+  height: 100px;
+  width: 100px;
+  transition: width 0.3s ease;
+  color:#fff;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+}
+
+.btn {
+  background-color: #000000;
+  color: #970101;
+  border: 0;
+  cursor: pointer;
+  font-size: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100px;
+  transition: transform 0.3s ease;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.btn:focus,
+.input:focus {
+  outline: none;
+}
+
+.search.active .input {
+  width: 300px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.search.active .btn {
+  transform: translateX(198px);
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px
+  ;
+}
